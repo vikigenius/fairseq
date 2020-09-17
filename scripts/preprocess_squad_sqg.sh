@@ -26,6 +26,7 @@ wget -N 'https://dl.fbaipublicfiles.com/fairseq/gpt2_bpe/encoder.json'
 wget -N 'https://dl.fbaipublicfiles.com/fairseq/gpt2_bpe/vocab.bpe'
 wget -N 'https://dl.fbaipublicfiles.com/fairseq/gpt2_bpe/dict.txt'
 
+export PYTHONPATH=$PYTHONPATH:$SCRIPT_DIR/..
 TASK=data/squad_sqg
 for SPLIT in train val
 do
