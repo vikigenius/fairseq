@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 (git clone https://github.com/NVIDIA/apex && wget git https://dl.fbaipublicfiles.com/fairseq/models/bart.large.tar.gz) &
-conda create -n fairseq python=3
+conda create -n fairseq python=3 -y
 source activate fairseq
-conda install pytorch -c pytorch
+conda install pytorch -c pytorch -y
 wait
 cd apex
 pip install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" \

@@ -133,6 +133,7 @@ experimental/*
 
 # data
 data
+apex
 
 # model files
 *.pt
